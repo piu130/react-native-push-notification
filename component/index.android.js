@@ -26,10 +26,6 @@ NotificationsComponent.prototype.getInitialNotification = function () {
         });
 };
 
-NotificationsComponent.prototype.requestPermissions = function(senderID: string) {
-	RNPushNotification.requestPermissions(senderID);
-};
-
 NotificationsComponent.prototype.cancelLocalNotifications = function(details: Object) {
 	RNPushNotification.cancelLocalNotifications(details);
 };
